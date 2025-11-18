@@ -38,7 +38,7 @@ This custom integration enables control of the Eufy RoboVac S1 Pro through Home 
 ### Manual Installation
 
 1. Download this repository
-2. Copy the `custom_components/eufy_robovac` folder to your Home Assistant's `config/custom_components/` directory
+2. Copy the `custom_components/eufy_robovac_s1_pro` folder to your Home Assistant's `config/custom_components/` directory
 3. Restart Home Assistant
 
 ## Configuration
