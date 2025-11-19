@@ -1,10 +1,10 @@
-# Eufy RoboVac S1 Pro - Home Assistant Integration
+# Eufy RoboVac - Home Assistant Integration
 
 [![hacs_badge](https://img.shields.io/badge/HACS-Custom-41BDF5.svg)](https://github.com/hacs/integration)
 
 ## Overview
 
-This custom integration enables control of the Eufy RoboVac S1 Pro through Home Assistant.
+This custom integration enables control of the Eufy RoboVacs through Home Assistant.
 
 ## Features
 
@@ -18,8 +18,8 @@ This custom integration enables control of the Eufy RoboVac S1 Pro through Home 
 
 ## Requirements
 
-- Home Assistant 2024.1.0 or later
-- Eufy RoboVac S1 Pro
+- Home Assistant 2025.10.0 or later
+- Eufy RoboVac (Currently S1, E28/E25)
 - Local network connection
 
 ## Installation
@@ -29,21 +29,21 @@ This custom integration enables control of the Eufy RoboVac S1 Pro through Home 
 1. Open HACS
 2. Click on "Integrations"
 3. Click the three dots menu in the top right and select "Custom repositories"
-4. Add repository URL `https://github.com/tkoba1974/ha-eufy-robovac-s1-pro`
+4. Add repository URL `https://github.com/tezzlicious/ha-eufy-robovac`
 5. Select "Integration" as the category
 6. Click "Add"
-7. Search for "Eufy RoboVac S1 Pro" in HACS and install it
+7. Search for "Eufy RoboVac" in HACS and install it
 8. Restart Home Assistant
 
 ### Manual Installation
 
 1. Download this repository
-2. Copy the `custom_components/eufy_robovac_s1_pro` folder to your Home Assistant's `config/custom_components/` directory
+2. Copy the `custom_components/eufy_robovac` folder to your Home Assistant's `config/custom_components/` directory
 3. Restart Home Assistant
 
 ### Notes on running Home Assistant inside Docker container
 
-You need to open 6666 and 6667 UDP ports to Home Assistant.
+You need to open 6666 and 6667 UDP ports to Home Assistant if you are running it through Docker.
 Please add these ports in the docker-compose.yaml as follows and rebuild the container.
 ```
 ports:
@@ -56,7 +56,7 @@ ports:
 
 1. Go to Home Assistant's Settings → Devices & Services
 2. Click "Add Integration"
-3. Search for "Eufy RoboVac S1 Pro"
+3. Search for "Eufy RoboVac"
 4. Follow the on-screen instructions to complete the setup
 
 ### Required Information
@@ -99,7 +99,7 @@ You'll need the following information during setup:
 
 ## Contributing
 
-Please report bugs and feature requests via [Issues](https://github.com/tkoba1974/ha-eufy-robovac-s1-pro/issues).
+Please report bugs and feature requests via [Issues](https://github.com/tezzlicious/ha-eufy-robovac-s1-pro/issues).
 
 Pull requests are welcome!
 
@@ -107,6 +107,7 @@ Pull requests are welcome!
 
 This project is based on:
 - [ha-eufy-robovac-g10-hybrid](https://github.com/Rjevski/ha-eufy-robovac-g10-hybrid)
+- [ha-eufy-robovac-s1-pro](https://github.com/tkoba1974/ha-eufy-robovac-s1-pro)
 
 ## License
 
